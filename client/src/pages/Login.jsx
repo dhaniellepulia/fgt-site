@@ -6,6 +6,7 @@ import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 import { useNavigate } from "react-router-dom";
 import LanguageSelector from "../components/LanguageSelector";
+import LoginPhoto from "../assets/3D asset 1.png";
 
 function Login() {
   const { login } = useAuth();
@@ -54,7 +55,7 @@ function Login() {
         <div className="w-full lg:w-1/2 flex items-center justify-center px-6">
           <img
             className="w-full h-auto"
-            src="../src/assets/3D asset 1.png"
+            src={LoginPhoto.src}
             alt="signup picture"
           />
         </div>
