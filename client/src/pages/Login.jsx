@@ -55,7 +55,7 @@ function Login() {
         <div className="w-full lg:w-1/2 flex items-center justify-center px-6">
           <img
             className="w-full h-auto"
-            src={LoginPhoto.src}
+            src={LoginPhoto}
             alt="signup picture"
           />
         </div>
