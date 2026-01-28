@@ -7,6 +7,10 @@ import { useAuth } from "../auth/AuthContext";
 import { useNavigate } from "react-router-dom";
 import LanguageSelector from "../components/LanguageSelector";
 import LoginPhoto from "../assets/3D asset 1.png";
+import Gradient from "../assets/gradient.png";
+import Logo from "../assets/logo PNE.png";
+import Phone from "../assets/phone number.png";
+import Email from "../assets/email.png";
 
 function Login() {
   const { login } = useAuth();
@@ -48,7 +52,7 @@ function Login() {
         <div className="absolute bottom-0 left-0 pointer-events-none">
           <img
             className="max-w-150 lg:max-w-225 h-auto"
-            src="../src/assets/gradient.png"
+            src={Gradient}
             alt="gradient"
           />
         </div>
@@ -63,11 +67,7 @@ function Login() {
         <div className="w-full lg:w-1/2 flex items-center justify-center px-1">
           <div className="w-full p-8">
             <div className="mb-5 w-full">
-              <img
-                className="w-full h-auto max-w-32"
-                src="../src/assets/logo PNE.png"
-                alt="logo"
-              />
+              <img className="w-full h-auto max-w-32" src={Logo} alt="logo" />
             </div>
             <h2 className="text-5xl font-semibold  mb-4">
               {t("login.main_title")}
@@ -128,10 +128,10 @@ function Login() {
 
             <div className="flex justify-between gap-5">
               <div className="w-1/2">
-                <img src="../src/assets/phone number.png" alt="Phone" />
+                <img src={Phone} alt="Phone" />
               </div>
               <div className="w-1/2">
-                <img src="../src/assets/email.png" alt="Email" />
+                <img src={Email} alt="Email" />
               </div>
             </div>
 
