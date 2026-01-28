@@ -6,31 +6,34 @@ import GameCard from "../GameCard.jsx";
 const gamesData = [
   {
     id: 1,
-    title: "1720 Minecraft Minecoins",
+    title: "Dota 2",
     duration: "5'",
     xp: "15 XP",
-    image: "https://via.placeholder.com/300x300",
+    image:
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDoP-w5XjVrKypx_X8tAFuvzSFM3xX7Zq9EAukhd-VmZfB2b3-",
   },
   {
     id: 2,
-    title: "1720 Minecraft Minecoins",
+    title: "F1 2025",
     duration: "5'",
     xp: "15 XP",
-    image: "https://via.placeholder.com/300x300",
+    image:
+      "https://preview.redd.it/what-new-feature-would-you-like-to-see-in-f1-25-v0-aad842jcjvqe1.jpeg?width=640&crop=smart&auto=webp&s=8d9bc309e370512c10f822924bd627ce733d0ad0",
   },
   {
     id: 3,
-    title: "1720 Minecraft Minecoins",
+    title: "Counter Strike: Global Offensive",
     duration: "5'",
     xp: "15 XP",
-    image: "https://via.placeholder.com/300x300",
+    image: "https://upload.wikimedia.org/wikipedia/en/f/f2/CS2_Cover_Art.jpg",
   },
   {
     id: 4,
-    title: "1720 Minecraft Minecoins",
+    title: "Mir 4",
     duration: "5'",
     xp: "15 XP",
-    image: "https://via.placeholder.com/300x300",
+    image:
+      "https://play-lh.googleusercontent.com/3Nez_pBcwAXtJbg8DZ3WxMguwr_BLXqmeG9XXoZW66TT2sp1sdsMB-Ursmxvvu7aIXV8",
   },
 ];
 

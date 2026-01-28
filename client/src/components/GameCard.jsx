@@ -14,7 +14,7 @@ function GameCard({ game }) {
         <img
           src={game.image}
           alt={game.title}
-          className="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity"
+          className="w-full h-full object-cover"
         />
       </div>
 
