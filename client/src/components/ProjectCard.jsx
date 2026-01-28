@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Time from "../assets/time.svg";
 
 function ProjectCard({ project }) {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ function ProjectCard({ project }) {
 
         <div className="flex justify-between gap-4 text-xs text-neutral-400">
           <span className="flex items-center gap-1">
-            <img src="/src/assets/time.svg" alt="" /> {project.duration}'
+            <img src={Time} alt="" /> {project.duration}'
           </span>
           <span className="flex items-center gap-1">⭐ {project.xp} XP</span>
         </div>

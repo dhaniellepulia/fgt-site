@@ -2,11 +2,15 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import LanguageSelector from "../components/LanguageSelector";
+import Logo from "../assets/logo PNE.png";
+import SignupPhoto from "../assets/3D asset 2.png";
+import Gradient from "../assets/gradient.png";
 
 function Register() {
   const { t } = useTranslation();
-
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen h-full bg-[#201e26] w-full overflow-hidden">
       <nav className="relative top-0 z-50 h-17.5">
@@ -27,14 +31,14 @@ function Register() {
         <div className="absolute bottom-0 left-0 pointer-events-none">
           <img
             className="max-w-150 lg:max-w-225 h-auto"
-            src="../src/assets/gradient.png"
+            src={Gradient}
             alt="gradient"
           />
         </div>
         <div className="w-full lg:w-1/2 flex items-center justify-center px-6">
           <img
-            className="w-full max-w-md h-auto"
-            src="../src/assets/3D asset 2.png"
+            className="w-full h-auto"
+            src={SignupPhoto}
             alt="signup picture"
           />
         </div>
@@ -42,11 +46,7 @@ function Register() {
         <div className="w-full lg:w-1/2 flex items-center justify-center px-1">
           <div className="w-full p-8">
             <div className="mb-5 w-full">
-              <img
-                className="w-full h-auto max-w-32"
-                src="../src/assets/logo PNE.png"
-                alt="logo"
-              />
+              <img className="w-full h-auto max-w-32" src={Logo} alt="logo" />
             </div>
             <h2 className="text-5xl font-semibold  mb-4">
               {t("signup.main_title")}

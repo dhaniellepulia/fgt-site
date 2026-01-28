@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import LanguageSelector from "../LanguageSelector";
+import HelpIcon from "../../assets/Help Icon.svg";
+import Avatar from "../../assets/avatar.png";
 import {
   Mail,
   HelpCircle,
@@ -61,11 +63,7 @@ function TopBar() {
           onClick={() => setIsOpen(!isOpen)}
           className="flex items-center gap-2 px-3 py-1 text-white transition-colors hover:bg-white/10 rounded-md cursor-pointer focus:outline-none"
         >
-          <img
-            src="../src/assets/Help Icon.svg"
-            alt="Help"
-            className="w-5 h-5"
-          />
+          <img src={HelpIcon} alt="Help" className="w-5 h-5" />
           <span className="flex items-center gap-1">
             Help
             <ChevronDown
@@ -110,11 +108,7 @@ function TopBar() {
         "
         >
           <div className="flex items-center gap-5">
-            <img
-              src="../src/assets/avatar.png"
-              alt="avatar"
-              className="w-8 h-8 rounded-full"
-            />
+            <img src={Avatar} alt="avatar" className="w-8 h-8 rounded-full" />
 
             <span className="text-lg font-medium text-neutral-400 tracking-wide lg:block hidden">
               heisenberg24

@@ -4,6 +4,7 @@ import React from "react";
 import Card from "../components/Card.jsx";
 import { ChevronRight } from "lucide-react";
 import TopBar from "../components/layouts/TopBar.jsx";
+import Discord from "../assets/discord logo.png";
 function UserDashboard() {
   return (
     <div className="min-h-screen">
@@ -99,7 +100,7 @@ function UserDashboard() {
               <div className="flex flex-row items-center gap-2">
                 <img
                   className="max-w-[80px] w-full h-auto"
-                  src="../src/assets/discord logo.png"
+                  src={Discord}
                   alt="discord logo"
                 />
                 <button className="inline gap-2 rounded-md bg-yellow-400 py-1 px-3 text-sm font-semibold text-white hover:bg-yellow-300 transition">

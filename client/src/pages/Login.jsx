@@ -57,11 +57,7 @@ function Login() {
           />
         </div>
         <div className="w-full lg:w-1/2 flex items-center justify-center px-6">
-          <img
-            className="w-full h-auto"
-            src={LoginPhoto}
-            alt="signup picture"
-          />
+          <img className="w-full h-auto" src={LoginPhoto} alt="login picture" />
         </div>
         {/* Login form */}
         <div className="w-full lg:w-1/2 flex items-center justify-center px-1">
@@ -128,10 +124,10 @@ function Login() {
 
             <div className="flex justify-between gap-5">
               <div className="w-1/2">
-                <img src={Phone} alt="Phone" />
+                <img src={Phone} alt="Phone" className="cursor-pointer" />
               </div>
               <div className="w-1/2">
-                <img src={Email} alt="Email" />
+                <img src={Email} alt="Email" className="cursor-pointer" />
               </div>
             </div>
 
